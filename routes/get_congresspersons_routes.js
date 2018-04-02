@@ -65,7 +65,6 @@ module.exports = (app, collection) => {
 				// Add all coordinates of congresspersons with type
 				collection.find().toArray((err, items) => {
 					let coords = {};
-					console.log(items);
 					for (i in items) {
 						const item = items[i];
 						coords[item.id] = item.coordinate;
